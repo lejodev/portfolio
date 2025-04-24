@@ -1,0 +1,33 @@
+.custom-toolbar {
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  padding: 0 16px;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+  height: 64px;
+  border-bottom: 1px solid #444;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 16px;
+
+    a {
+      color: #000;
+      text-transform: uppercase;
+      font-weight: 500;
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.portfolio-card {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 16px;
+
+  .content-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .text-content {
+      flex: 1;
+
+      .portfolio-title {
+        font-size: 48px;
+        font-weight: bold;
+        margin: 0 0 8px 0;
+        line-height: 1.2;
+      }
+
+      .portfolio-description {
+        font-size: 18px;
+        color: #666;
+        margin: 0 0 16px 0;
+      }
+
+      .social-icons {
+        display: flex;
+        gap: 8px;
+
+        a {
+          color: #333;
+
+          &:hover {
+            color: #0077b5; // LinkedIn blue (or customize for each icon)
+          }
+        }
+      }
+    }
+
+    .portfolio-image {
+      max-width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .content-container {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .portfolio-image {
+        max-width: 100%;
+      }
+    }
+  }
+}
