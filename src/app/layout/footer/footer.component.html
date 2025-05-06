@@ -1,1 +1,37 @@
-<p>footer works!</p>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3 class="footer-title">Alejandro Rincon</h3>
+      <p class="footer-description">Software Developer focused on creating exceptional digital experiences</p>
+    </div>
+    
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Quick Links</h4>
+      <nav class="footer-links">
+        <a [routerLink]="['/']" fragment="home">Home</a>
+        <a [routerLink]="['/']" fragment="about">About</a>
+        <a [routerLink]="['/']" fragment="projects">Projects</a>
+        <a [routerLink]="['/']" fragment="blog">Blog</a>
+      </nav>
+    </div>
+
+    <div class="footer-section">
+      <h4 class="footer-subtitle">Connect</h4>
+      <div class="social-links">
+        <a href="https://github.com/lejodev" target="_blank" aria-label="GitHub">
+          <mat-icon>code</mat-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/alejandro-rincon-vera-4810b615a/" target="_blank" aria-label="LinkedIn">
+          <mat-icon>linkedin</mat-icon>
+        </a>
+        <a href="mailto:alejandro.rv97@gmail.com" aria-label="Email">
+          <mat-icon>email</mat-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; {{currentYear}} Alejandro Rincon. All rights reserved.</p>
+  </div>
+</footer>

@@ -1,0 +1,7 @@
+<ng-container *ngIf="post">
+    <h1>{{ post.title }}</h1>
+    <small>{{ post.created_at}}</small>
+    <hr />
+    <div [innerHTML]="post.content"></div>
+  </ng-container>
+  

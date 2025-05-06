@@ -5,6 +5,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
   imports: [
     CommonModule,
     RouterModule,
-    MatToolbarModule
+    MatToolbarModule,
+    SharedModule
   ]
 })
 export class LayoutModule { }

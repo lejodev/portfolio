@@ -1,0 +1,9 @@
+<div *ngFor="let post of posts" class="post-preview">
+    <h2>
+      <a [routerLink]="['/blog', post.slug]">{{ post.title }}</a>
+    </h2>
+    <p>{{ post.excerpt }}</p>
+    <small>{{ post.created_at | date: 'longDate' }}</small>
+    <hr />
+  </div>
+  

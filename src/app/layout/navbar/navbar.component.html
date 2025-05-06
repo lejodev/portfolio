@@ -1,12 +1,27 @@
-<mat-toolbar color="primary" class="custom-toolbar">
-    <div class="logo">Alejandro</div>
-
-    <span class="spacer"></span>
+<mat-toolbar class="custom-toolbar">
+  <div class="navbar-container">
+    <a routerLink="/" class="logo">
+      <span class="logo-text">AR</span>
+      <span class="logo-full">Alejandro Rincon</span>
+    </a>
 
     <nav class="nav-links">
-        <a mat-button routerLink="/services">Blog</a>
-        <a mat-button routerLink="/portfolio">Portfolio</a>
-        <a mat-button routerLink="/about">About</a>
-        <a mat-button routerLink="/contact">Contact</a>
+      <a mat-button routerLink="/blog" routerLinkActive="active-link">
+        <mat-icon>article</mat-icon>
+        <span>Blog</span>
+      </a>
+      <a mat-button routerLink="/portfolio" routerLinkActive="active-link">
+        <mat-icon>work</mat-icon>
+        <span>Portfolio</span>
+      </a>
+      <a mat-button routerLink="/about" routerLinkActive="active-link">
+        <mat-icon>person</mat-icon>
+        <span>About</span>
+      </a>
+      <a mat-button routerLink="/contact" routerLinkActive="active-link">
+        <mat-icon>mail</mat-icon>
+        <span>Contact</span>
+      </a>
     </nav>
+  </div>
 </mat-toolbar>

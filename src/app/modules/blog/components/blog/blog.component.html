@@ -1,0 +1,25 @@
+<section class="blog-section">
+  <div class="section-header">
+    <h2>Latest Articles</h2>
+    <p class="section-description">Thoughts on development, tech, and best practices</p>
+  </div>
+
+  <div class="blog-grid">
+    <mat-card *ngFor="let post of blogPosts" class="blog-card">
+      <img mat-card-image [src]="post.image" [alt]="post.title">
+      <mat-card-content>
+        <div class="post-meta">
+          <span class="post-date">{{post.date | date}}</span>
+          <span class="post-category">{{post.category}}</span>
+        </div>
+        <h3>{{post.title}}</h3>
+        <p>{{post.excerpt}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button [routerLink]="['/blog', post.slug]">
+          Read More <mat-icon>arrow_forward</mat-icon>
+        </a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</section>

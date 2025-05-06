@@ -11,10 +11,14 @@ import { MatCardModule } from '@angular/material/card';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from './modules/home/components/home/home.component';
 import { HomeModule } from './modules/home/home.module';
+// import { ProjectsComponent } from './modules/projects/components/projects/projects.component';
+// import { BlogComponent } from './modules/blog/components/blog/blog.component';
+import { AboutComponent } from './modules/about/components/about/about.component';
+import { ContactComponent } from './modules/contact/components/contact/contact.component';
+import { ProjectsModule } from './modules/projects/projects.module';
 @NgModule({
   declarations: [
     AppComponent,
-    // FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -23,8 +27,7 @@ import { HomeModule } from './modules/home/home.module';
     LayoutModule,
     MatToolbarModule,
     SharedModule,
-    HomeModule
-
+    // ProjectsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
